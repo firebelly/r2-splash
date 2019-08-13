@@ -1,0 +1,38 @@
+# Build
+.sass-cache
+node_modules
+npm-debug.log
+config.codekit
+*.js.map
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/*
+
+# Node Package Manager
+node_modules
+
+# Rbenv gemsets
+.gems
+
+# OSX junk
+.DS_Store
+
+# Letsencrypt
+.well-known
+
+# Fabfile
+*.pyc
+
+# Bower
+bower_components
+
+# Final build
+dist
+
+# Keep fonts out of repo
+assets/fonts

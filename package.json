@@ -1,0 +1,36 @@
+{
+  "name": "static-starter",
+  "version": "1.0.0",
+  "author": "nate beaty",
+  "license": "ISC",
+  "main": "gulpfile.js",
+  "description": "we be gulpin",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-gzip": "^1.4.2",
+    "gulp-if": "^2.0.2",
+    "gulp-include": "^2.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-rev": "^8.1.1",
+    "gulp-rev-rewrite": "^2.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
+    "minimist": "^1.2.0",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/natebeaty/static-starter.git"
+  }
+}

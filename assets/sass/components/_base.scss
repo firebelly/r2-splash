@@ -1,0 +1,92 @@
+// Base styles
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: $black;
+  color: $white;
+  font: 16px/1.5 $font-regular;
+  letter-spacing: 1.25px;
+  @extend %smooth;
+
+  @include media-md {
+    font-size: 16px;
+  }
+}
+
+// Default link styles
+a {
+  color: $red;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+figure,
+img {
+  max-width: 100%;
+  height: auto;
+}
+figure {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.alert {
+  background: $black;
+  color: $white;
+  text-align: center;
+  z-index: 1000;
+  padding: mobile-grid(3);
+  p {
+    margin: 0;
+  }
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  @include media-md {
+    padding: grid(3);
+    margin-left: columns(2);
+  }
+}
+
+// This allows js to determine breakpoint
+#breakpoint-indicator {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+
+  &::after {
+    content: 'xs';
+    @include media-sm {
+      content: 'sm';
+    }
+    @include media-md {
+      content: 'md';
+    }
+    @include media-nav {
+      content: 'nav';
+    }
+    @include media-lg {
+      content: 'lg';
+    }
+    @include media-xl {
+      content: 'xl';
+    }
+  }
+}

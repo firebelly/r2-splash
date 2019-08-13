@@ -1,0 +1,37 @@
+// Utility classes
+.hidden {
+  display: none;
+}
+
+// Visually hide, accessibility-friendly
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.clearfix,
+.cf {
+  @include clearfix;
+}
+
+// Visibility classes (borrowing nomenclature from Foundation)
+.show-for-medium-up {
+  display: none;
+  @include media-md {
+    display: block;
+    &.-inline {
+      display: inline-block;
+    }
+  }
+}
+.hide-for-medium-up {
+  @include media-md {
+    display: none !important;
+  }
+}

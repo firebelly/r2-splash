@@ -1,0 +1,22 @@
+{
+  "name": "static-starter",
+  "homepage": "https://github.com/natebeaty/static-starter",
+  "authors": [
+    "Nate Beaty <nate@clixel.com>"
+  ],
+  "description": "boilerplate html5 static site",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "velocity": "^2.0.5"
+  }
+}

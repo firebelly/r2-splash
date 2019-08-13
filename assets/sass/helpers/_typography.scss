@@ -1,0 +1,49 @@
+// Typography
+
+@font-face {
+    font-family: 'relativefaux';
+    src: url('../fonts/relative-faux-webfont.woff2') format('woff2'),
+         url('../fonts/relative-faux-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Fonts
+$font-display: relativefaux, sans-serif;
+$font-header: relativefaux, sans-serif;
+$font-regular: relativefaux, sans-serif;
+
+h1,
+.h1 {
+  font: 32px/1 $font-header;
+  margin: 0 0 grid(2);
+  @extend %smooth;
+
+  @include media-md {
+    font-size: 60px;
+  }
+}
+
+h2,
+.h2 {
+	font: 24px/1 $font-header;
+  text-transform: uppercase;
+  @extend %smooth;
+}
+
+h3,
+.h3 {
+  font: 20px/1 $font-header;
+  text-transform: uppercase;
+  @extend %smooth;
+}
+
+h4,
+.h4 {
+	font: 16px/1.5 $font-display;
+}
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+}
