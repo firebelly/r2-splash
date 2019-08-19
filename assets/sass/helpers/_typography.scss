@@ -27,23 +27,23 @@ h1,
 h2,
 .h2 {
 	font: 24px/1 $font-header;
-  text-transform: uppercase;
   @extend %smooth;
 }
 
 h3,
 .h3 {
-  font: 20px/1 $font-header;
-  text-transform: uppercase;
+  font: 16px/1 $font-header;
   @extend %smooth;
 }
 
 h4,
 .h4 {
-	font: 16px/1.5 $font-display;
+	font: 13px/1.54 $font-display;
+  letter-spacing: 1.35px;
 }
 
-h4 {
+%small-caps {
   text-transform: uppercase;
+  font: 12px/1.6 $font-display;
   letter-spacing: 1.75px;
 }

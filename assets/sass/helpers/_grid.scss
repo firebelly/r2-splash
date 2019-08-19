@@ -31,6 +31,10 @@ $column-width: 100% / $global-columns;
   &.-persist {
     display: flex;
   }
+  &.-centered {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .grid.-persist {
