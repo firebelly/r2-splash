@@ -103,7 +103,7 @@ gulp.task('revrewrite', ['rev'], function() {
 });
 
 // folders to watch for changes
-gulp.task('watch', ['styles', 'scripts', 'svgs'], function() {
+gulp.task('watch', ['build'], function() {
   browserSync.init({
     proxy: opt.siteUrl,
     files: ['*.html'],
@@ -116,6 +116,8 @@ gulp.task('watch', ['styles', 'scripts', 'svgs'], function() {
   gulp.watch('assets/js/*.js', ['scripts']);
   gulp.watch('assets/js/**/*.js', ['scripts']);
   gulp.watch('assets/svgs/*.svg', ['svgs']);
+  gulp.watch('assets/images/*', ['copy']);
+  gulp.watch('*.html', ['copy']);
 });
 
 // Copy various files/dirs to dist
